@@ -10,3 +10,11 @@ class SubscribersRepositoryInterface:
     @abstractmethod
     def select_subscriber(self, email: str, evento_id: int) -> Inscritos:
         pass
+
+    @abstractmethod    
+    def select_subscribers_by_link(self, link, event_id: int) -> list:
+        pass
+
+    @abstractmethod
+    def get_ranking(self, event_id: int) -> list:
+        pass
